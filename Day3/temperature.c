@@ -1,0 +1,9 @@
+double* convertTemperature(double celsius, int* returnSize) {
+    *returnSize=2;
+    double* ans=(double*)malloc((*returnSize)*sizeof(double));
+   double Kelvin = celsius + 273.15;
+   double Fahrenheit = celsius * 1.80 + 32.00;
+    ans[0]= Kelvin;
+    ans[1]=Fahrenheit;
+   return ans;
+}
